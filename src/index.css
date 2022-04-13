@@ -1,0 +1,1047 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Tinos&display=swap');
+
+/* Base Style */
+* 
+{
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  /* background-color:  rgb(0,0,0); */
+}
+
+
+/* Navigation Bar CSS */
+ul
+{
+  list-style-type: none;
+}
+
+.navbar 
+{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  /* border-bottom: 1px solid #f2f2f2; */
+  position: fixed;
+  justify-content: space-between;
+  z-index: 2;
+  background-color: black;
+}
+
+.navbar img 
+{
+  width: 50px;
+  height: 70px;
+  padding-left: 2rem;
+}
+
+.navbar h1 
+{
+  color: white;
+}
+
+.navbar .nav-menu
+{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .nav-item a
+{
+  text-decoration: none;
+  padding: 1rem;
+  letter-spacing: normal;
+  font-size: 25px;
+}
+
+.navbar .social-media-menu
+{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 5rem 1rem 0rem;
+}
+
+.navbar .social-media-menu a
+{
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.navbar .social-media-menu .icon:hover 
+{
+  opacity: 0.5;
+  transition: all .5s;
+}
+
+.navbar .hamburger
+{
+  display: none;
+}
+
+.navbar a:hover 
+{
+  opacity: 0.5;
+  transition: all .3s;
+}
+
+/* Showreel */
+
+/* Hero */
+
+.content
+{
+  padding-top: 20vh;
+  background-color: black;
+}
+
+.new-container
+{
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-video-container
+{
+  box-sizing: border-box;
+  border: 1px solid grey;
+  margin: 0 5rem 0 5rem;
+}
+
+.hero-text-container
+{
+  margin: 0 5rem 0 5rem;
+  text-align: center;
+}
+
+.hero-text-container h1
+{
+  font-size: 50px;
+}
+
+.hero-text-container h2
+{
+  font-size: 40px;
+}
+
+.hero-text-container a:hover
+{
+  opacity: 0.5;
+  transition: all .3s;
+}
+
+/* Music Card */
+
+.music-content
+{
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  width: 100%;
+  text-align: left;
+  font-size: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.music-wrapper .music-title-container
+{
+  position: relative;
+  top: 10rem;
+  z-index: 1;
+}
+
+.music-wrapper .music-title-container .music-title h1
+{
+  font-size: 48px;
+  letter-spacing: 0;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+.music-content .album-new
+{
+  vertical-align: middle;
+  width: 25%;
+  text-align: center;
+  margin: 1rem;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+.music-content .album-new:hover
+{
+  opacity: 0.5;
+  transition: all .5s;
+}
+
+
+.music-content .album-new img
+{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Video Card */
+
+.video-content
+{
+  max-width: 100%;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 50px;
+  text-align: left;
+  font-size: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.video-wrapper .video-title-container
+{
+  position: relative;
+  top: 11rem;
+  z-index: 1;
+}
+
+.video-wrapper .video-title-container .video-title h1
+{
+  font-size: 48px;
+  letter-spacing: 0;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+.video-content .video-new
+{
+  vertical-align: middle;
+  width: 50%;
+  height: 30rem;
+  text-align: center;
+  margin: 1rem;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+/* Writing Card */
+
+.writing-content
+{
+  max-width: 100%;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 50px;
+  text-align: left;
+  font-size: 15px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.writing-wrapper .writing-title-container
+{
+  position: relative;
+  top: 11rem;
+  z-index: 1;
+}
+
+.writing-wrapper .writing-title-container .writing-title h1
+{
+  font-size: 48px;
+  letter-spacing: 0;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+.writing-content .writing-new
+{
+  vertical-align: middle;
+  width: 50%;
+  height: 30rem;
+  text-align: left;
+  margin: 1rem;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+  color: white;
+  overflow: hidden;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.writing-content .writing-new h1
+{
+  margin-top: 0px;
+  margin-bottom: 10pt;
+}
+
+.writing-content .writing-new p
+{
+  font-family:'Tinos', serif;
+  margin-top: 0px;
+  margin-bottom: 10pt;
+}
+
+
+/* Landing Page */
+
+video
+{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.landing-title .heading-deen h1
+{
+  padding-top: 100px;
+  padding-bottom: 150px;
+  justify-content: center;
+  text-align: center;
+  font-size: 4.2rem;
+  background-color:  transparent;
+}
+
+.landing-title .heading-enter
+{
+  padding-top: 200px;
+
+}
+
+.landing-title .heading-enter h1
+{
+
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.landing-title .heading-enter h1:hover 
+{
+  opacity: 0.5;
+  transition: all .3s;
+}
+
+.landing-title .social-media-menu 
+{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 1rem 0rem;
+}
+
+.landing-title .social-media-menu .nav-item
+{
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 4000;
+  text-decoration: none;
+  padding: 1.5rem;
+  letter-spacing: 1em;
+  
+}
+
+.landing-title .social-media-menu .icon:hover  
+{
+  opacity: 0.5;
+  transition: all .5s;
+}
+
+.landing-title .social-media-menu .nav-item:hover
+{
+  opacity: 0.5;
+  transition: all .5s;
+  
+}
+
+/* Card VideoVideo */
+
+.videovideo-content
+{
+  max-width: 100%;
+  margin: 0 auto;
+  width: 70%;
+  padding-bottom: 150px;
+  text-align: left;
+  font-size: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.videovideo-content .videovideo-new
+{
+  vertical-align: middle;
+  width: 80%;
+  height: 30rem;
+  text-align: center;
+  margin: 1rem;
+  box-sizing: border-box;
+  border: 1px solid grey;
+
+}
+
+.video-picture-content
+{
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  padding-top: 50px;
+  width: 56%;
+  height: 55%;
+  text-align: left;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.video-picture-content .video-picture-new
+{
+  vertical-align: middle;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+.video-picture-content .video-picture-new img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Music Page */
+
+
+.music-music-content
+{
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  width: 100%;
+  text-align: left;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.music-music-content .album-new
+{
+  vertical-align: middle;
+  width: 33%;
+  text-align: center;
+  margin: 1rem;
+}
+
+.music-music-content .album-new img:hover
+{
+  opacity: 0.5;
+  transition: all .5s;
+}
+
+
+.music-music-content .album-new img
+{
+  width: 80%;
+  height: 80%;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+.music-music-content .album-new figcaption 
+{
+  padding-top: 15px;
+  font-size: 30px;
+
+}
+
+.music-music-content .album-new a figcaption:hover
+{
+  opacity: 0.5;
+  transition: all .3s;
+}
+
+/* Written Page */
+
+.writing-writing-content
+{
+  max-width: 100%;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 50px;
+  text-align: left;
+  font-size: 15px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.writing-writing-content .writing-writing-new
+{
+  vertical-align: middle;
+  width: 100%;
+  height: 30rem;
+  text-align: left;
+  margin: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2; 
+  color: white;
+  overflow: hidden;
+  padding: 5rem 15rem 40rem 15rem;
+  justify-content: center;
+}
+
+.writing-writing-content .writing-writing-new h1
+{
+  margin-top: 0px;
+  margin-bottom: 10pt;
+}
+
+.writing-writing-content .writing-writing-new p
+{
+  font-family:'Tinos', serif;
+  margin-top: 0px;
+  margin-bottom: 10pt;
+
+}
+
+/* Contact Us Page */
+
+.contact-wrapper 
+{
+
+  max-width: 100%;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 130px;
+  text-align: left;
+  font-size: 15px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2; 
+}
+
+.contact-wrapper .contact-picture-container
+{
+  margin: 0 5rem 0 5rem;
+}
+
+.contact-wrapper .contact-picture-container img
+{
+ height: 600px;
+ width: 600px;
+ box-sizing: border-box;
+ border: 1px solid grey;
+ justify-content: center;
+}
+
+.contact-wrapper .contact-text-container
+{
+  margin: 10rem 0rem 0 0rem;
+  text-align: left;
+}
+
+.contact-wrapper .contact-text-container p
+{
+  font-size: 25px;
+}
+
+.contact-details-wrapper 
+{
+
+  max-width: 100%;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 130px;
+  text-align: left;
+  font-size: 15px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  /* border-bottom: 1px solid #f2f2f2;  */
+}
+
+
+.contact-details-wrapper .contact-details-text-container
+{
+  padding: 5rem 0 5rem 0;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.contact-details-wrapper .contact-details-text-container p
+{
+  font-size: 25px;
+}
+
+/* Responsive Pages */
+
+/* Navbar */
+
+@media screen and (max-width: 940px) {
+
+
+  .navbar .nav-menu {
+    position: absolute;
+    left: -100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    top: 80px;
+    text-align: center;
+    transition: 0.4s;
+   
+  }
+
+ 
+
+  .navbar .nav-menu.active {
+    left: 0%;
+    background-color: black;
+    padding: 0;
+   
+  }
+
+  .navbar .nav-menu .nav-item {
+    margin: 1rem 0;
+    
+  }
+
+
+  .navbar .nav-menu .nav-item a 
+  {
+    font-size: 30px;
+  }
+
+  .navbar .social-media-menu {
+    position: absolute;
+    left: -100%;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 415px;
+    text-align: center;
+    transition: 0.4s;
+  }
+
+  .navbar .social-media-menu.active {
+    left: 0%;
+    background-color: black;
+   
+  }
+
+  .navbar .social-media-menu .nav-item a 
+  {
+    font-size: 45px;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+    color: white;
+    font-size: 40px;
+    padding: 3rem;
+  }
+
+
+  /* Showreel */
+
+  .new-container
+  {
+    flex-direction: column;
+  }
+
+  .new-container .hero-video-container iframe
+  {
+    width: 600px;
+  }
+
+  .new-container .hero-text-container
+  {
+    margin: 5rem 5rem 0 5rem; 
+  }
+
+  .music-wrapper .music-title-container
+  {
+    top: 7rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5rem;
+    max-width:80%;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+   
+  }
+
+  .music-wrapper .music-title-container .music-title h1
+  {
+    font-size: 30px;
+    transform: none;
+    justify-content: center;
+    position: unset;
+    font-size: 40px;
+  }
+
+  .music-wrapper .music-content
+  {
+    flex-direction: column;
+  }
+
+  .music-wrapper .music-content .album-new
+  {
+    width: 70%;
+    max-width: fit-content;
+    margin: 5rem
+    
+  }
+
+  .video-content
+  {
+    flex-direction: column;
+  }
+
+  .video-content .video-new
+  {
+    width: 100%;
+  }
+
+  .video-wrapper .video-title-container
+  {
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 5rem 15rem 5rem;
+    max-width:80%;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+
+  .video-wrapper .video-title-container .video-title h1
+  {
+    font-size: 30px;
+    transform: none;
+    justify-content: center;
+    position: unset;
+    font-size: 40px;
+  }
+
+  .writing-content
+  {
+    flex-direction: column;
+  }
+
+  .writing-content .writing-new
+  {
+    width: 100%;
+    padding-top: 5rem;
+  }
+
+  .writing-wrapper .writing-title-container
+  {
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 5rem 15rem 5rem;
+    max-width:80%;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .writing-wrapper .writing-title-container .writing-title h1
+  {
+    font-size: 30px;
+    transform: none;
+    justify-content: center;
+    position: unset;
+    font-size: 40px;
+  }
+
+  /* Video Page */
+
+  .video-picture-content
+  {
+    width: 80%
+  }
+
+  .videovideo-content
+  {
+    width: 100%;
+  }
+
+  /* Music Page */
+  .music-music-content 
+  {
+    flex-direction: column;
+    
+  }
+
+  .music-music-content .album-new
+  {
+    width: 80%;
+    max-width: fit-content;
+    margin: 5rem
+  }
+  
+  /* Written Page */
+  .writing-writing-content .writing-writing-new
+  {
+    padding: 5rem 2rem 20rem 2rem;
+    height: fit-content;
+  }
+
+  .writing-writing-content
+  {
+    font-size: 20px;
+  }
+
+  /* Contact Us Page */
+
+  .contact-wrapper 
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-wrapper .contact-picture-container
+  {
+    margin: auto;
+  }
+
+  .contact-details-wrapper
+  {
+    flex-direction: column;
+  }
+
+  .contact-details-wrapper .contact-details-text-container
+  {
+    width: 100%;
+  }
+
+  /* Landing Page */
+
+  .landing-title .heading-enter
+{
+  padding-top: 550px;
+
+}
+
+.landing-title .social-media-menu .nav-item
+{
+  font-size: 60px;
+}
+
+.landing-title .heading-enter h1
+{
+  font-size: 4rem;
+}
+
+.landing-title .heading-deen h1
+{
+  font-size: 5rem;
+}
+
+}
+
+
+
+@media screen and (max-width: 540px) {
+
+
+  /* Nav Bar */
+
+  .navbar .social-media-menu .nav-item a
+  {
+    font-size: 30px;
+  }
+
+  .navbar img 
+  {
+    width: 30px;
+    height: 50px;
+  }
+
+  .navbar .social-media-menu
+  {
+    top: 410px;
+    height: 40%;
+  }
+
+  .navbar .hamburger 
+  {
+    font-size: 25px;
+  }
+
+  /* Showreel Page*/
+  
+  .new-container .hero-video-container iframe
+  {
+    width: 300px;
+    height: auto;
+  }
+
+  .music-wrapper .music-title-container
+  {
+    margin-left: 2rem;
+    padding: 0 0 5rem 0;
+
+  }
+
+  .music-wrapper .music-content .album-new 
+  {
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .video-wrapper .video-title-container
+  {
+    margin-left: 2rem;
+    padding: 0 0 15rem 0;
+  }
+
+  
+
+  .video-content .video-new
+  {
+    width: 100%;
+    height: fit-content;
+  }  
+
+
+  .writing-wrapper .writing-title-container
+  {
+    padding: 0 0 10rem 2rem;
+    margin: 0px;
+  }
+
+  
+
+  /* Video Page */
+
+  .video-picture-content .video-picture-new
+  {
+    height: 150px;
+  }
+
+  .videovideo-content .videovideo-new
+  {
+    height: 250px;
+  }
+
+  /* Music Page */
+
+  .new-container .hero-video-container iframe
+  {
+    height: 300px;
+    width: 350px;
+  }
+
+  .hero-text-container h1
+  {
+    font-size: 40px;
+  }
+
+  .hero-text-container a
+  {
+    font-size: 30px;
+  }
+
+  .music-music-content .album-new
+  {
+    margin: 2rem;
+  }
+
+  .music-music-content .album-new img
+  {
+    width: 240px;
+  }
+  
+  /* Written Page */
+  .writing-writing-content .writing-writing-new
+  {
+    padding: 0rem 0rem 10rem 0rem;
+    height: fit-content;
+  }
+
+  .writing-writing-content
+  {
+    font-size: 15px;
+  }
+
+  /* Contact Us Page */
+
+  .contact-wrapper .contact-text-container
+  {
+    margin: 5rem 0rem 0 0rem;
+  }
+
+  .contact-wrapper .contact-picture-container img
+  {
+    width: 300px;
+    height: fit-content;
+  }
+
+  /* Landing Page */
+
+  .landing-title .heading-deen h1
+  {
+    font-size: 3rem;
+  }
+
+  .landing-title .heading-enter
+  {
+    padding-top: 300px;
+  }
+
+  .landing-title .heading-enter h1
+  {
+    font-size: 2.5rem;
+  }
+
+  .landing-title .social-media-menu .nav-item
+  {
+    font-size: 40px;
+    padding: 1rem;
+  }
+
+}
